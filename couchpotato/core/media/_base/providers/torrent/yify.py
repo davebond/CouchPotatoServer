@@ -48,9 +48,9 @@ class Base(TorrentProvider):
                     for release in result.get('torrents', []):
 
                         if release['quality'] and release['quality'] not in result['title_long']:
-                            title = result['title_long'] + ' BRRip ' + release['quality']
+                            title = result['title_long'] + ' BRRip YIFY' + release['quality']
                         else:
-                            title = result['title_long'] + ' BRRip'
+                            title = result['title_long'] + ' BRRip YIFY'
 
                         results.append({
                             'id': release['hash'],
